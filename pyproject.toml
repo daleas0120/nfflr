@@ -34,7 +34,8 @@ dependencies = [
     "plum-dispatch",
     "pytorch-ignite",
     "py-config-runner",
-    "dgl; sys_platform == 'linux'",
+    "dgl==2.1.0; sys_platform == 'darwin'",
+    "dgl>=2.4.0; sys_platform == 'linux'",
     "jarvis-tools>=2021.07.19"
 ]
 
