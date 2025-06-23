@@ -34,7 +34,7 @@ dependencies = [
     "plum-dispatch",
     "pytorch-ignite",
     "py-config-runner",
-    "dgl; sys_platform == 'linux'",
+    "dgl>=2.1.0; sys_platform == 'linux'",
     "jarvis-tools>=2021.07.19"
 ]
 
@@ -76,7 +76,7 @@ torchvision = [
   { index = "pytorch-cu118", marker = "sys_platform == 'linux'" },
 ]
 dgl = [
-  { version = "*", platform="linux" },
+  { index = "dgl-cu118", marker = "sys_platform == 'linux'" },
   { index = "dgl-darwin", marker = "sys_platform == 'darwin'" },
 ]
 
