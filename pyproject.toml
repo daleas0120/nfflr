@@ -76,7 +76,7 @@ torchvision = [
   { index = "pytorch-cu118", marker = "sys_platform == 'linux'" },
 ]
 dgl = [
-  { index = *, marker = "sys_platform == 'linux'" },
+  { version = "*", platform="linux" },
   { index = "dgl-darwin", marker = "sys_platform == 'darwin'" },
 ]
 
